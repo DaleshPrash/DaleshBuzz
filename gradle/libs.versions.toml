@@ -1,0 +1,113 @@
+# libs.versions.toml
+
+[versions]
+# Updated versions to the latest stable releases
+agp = "8.7.0"
+kotlin = "2.0.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2023.08.00"
+appcompatVersion = "1.7.0"          # Updated to latest
+biometricVersion = "1.2.0-alpha05"
+materialVersion = "1.11.0"          # Updated to latest
+retrofitVersion = "2.9.0"
+okhttpVersion = "4.9.3"             # Updated to latest
+glideVersion = "4.15.1"             # Updated to latest
+coroutinesVersion = "1.7.3"         # Updated to latest
+cardview = "1.0.0"
+ktlint = "12.1.1"
+hilt = "2.51.1"
+roomVersion = "2.5.2"
+jacoco = "0.8.10"
+mockkVersion = "1.13.5"
+fragmentTestingVersion = "1.5.7"
+lifecycleVersion = "2.6.1"
+fragmentKtxVersion = "1.6.1"
+navigationVersion = "2.7.3"
+viewPagerVersion = "1.0.0"
+archCoreTesting = "2.2.0"
+junitKtx = "1.2.1"
+biometricKtx = "1.1.0"
+
+[libraries]
+# --- UI Libraries ---
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+
+# Compose UI Libraries (using BOM version management)
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-uitooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-uitestmanifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-uitestjunit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Material Design & UI Components
+android-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometricVersion" }
+androidxviewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewPagerVersion" }
+
+# --- Navigation Libraries ---
+androidxfragmentktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtxVersion" }
+androidxnavigationfragmentktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationVersion" }
+androidxnavigationuiktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationVersion" }
+
+
+# Image Loading (Glide)
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glideVersion" }
+
+# --- Lifecycle & State Management ---
+androidxlifecycleviewmodelktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion" }
+androidxlifecyclelivedataktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleVersion" }
+
+
+# --- Coroutines & Async Libraries ---
+coroutinesandroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
+coroutinestesting = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion" }
+
+# --- Testing Libraries (Unit and UI and Mocking) ---
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espressocore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion" }
+mockkandroid = { group = "io.mockk", name = "mockk-android", version.ref = "mockkVersion" }
+androidxfragmenttesting = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentTestingVersion" }
+coretesting = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCoreTesting" }
+
+# --- Mocking & Dependency Injection Testing ---
+hiltandroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hiltcompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hiltandroidtesting = { group = "com.google.dagger", name = "hilt--android-testing", version.ref = "hilt" }
+hilttesting = { group = "com.google.dagger", name = "hilt-testing", version.ref = "hilt" }
+
+# --- Networking Libraries ---
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpVersion" }
+
+# --- Database Libraries ---
+roomruntime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+roomktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+roomcompiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-biometric-ktx = { group = "androidx.biometric", name = "biometric-ktx", version.ref = "biometricKtx" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }  # Updated to use version.ref
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlinparcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }  # Added Parcelize
